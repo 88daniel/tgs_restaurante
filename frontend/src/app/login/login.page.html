@@ -1,0 +1,71 @@
+
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-lg="8" size-lg="8" size-md="8" size-sm="12" size-xs="12" >
+        <ion-card class="login-div" mode="ios">
+          <ion-card-header class="ion-text-center">
+            <ion-card-title> Hello! </ion-card-title><br>
+            <ion-card-subtitle>Sign in to your account</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid fixed>
+              <ion-row>
+                <ion-col size="12">
+                 <ion-item>
+                  <ion-label position="floating">Usuario:</ion-label>
+                  <ion-input size="9"  type="text"></ion-input>
+                 </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label position="floating">Password:</ion-label>
+                    <ion-input  type="password"></ion-input>
+
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="12">
+                  <ion-button expand="block" color="dark">
+                    <ion-icon slot="start" name="enter-outline"></ion-icon>
+                    Login
+                  </ion-button>
+                </ion-col>
+
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="12">
+                  <div class="ion-text-center" style="font-weight: bolder;">Or</div>
+                </ion-col>
+
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="12">
+                  <ion-button (click)="loginWithFacebook()" expand="block" color="primary">
+                    <ion-icon slot="start" name="logo-facebook"></ion-icon>
+                    Sign up with Facebook
+                  </ion-button>
+                </ion-col>
+
+              </ion-row>
+
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="12" >
+                  <ion-button expand="block" color="danger" >
+                    <ion-icon slot="start" name="logo-google"></ion-icon>
+                    Sign up with Gmail
+                  </ion-button>
+                </ion-col>
+
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

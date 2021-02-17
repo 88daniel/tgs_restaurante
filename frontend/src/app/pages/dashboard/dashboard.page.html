@@ -1,18 +1,18 @@
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="users">
-      <ion-icon name="people-outline"></ion-icon>
-      <ion-label>Usuarios</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="pedidos">
-      <ion-icon name="cash-outline"></ion-icon>
-      <ion-label>Pedidos</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="productos">
-      <ion-icon name="fast-food-outline"></ion-icon>
-      <ion-label>Productos</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6">
+        <div class="ion-text-left">
+          <ion-text color="primary">
+            <h1>Bienvenido</h1>
+            <ion-item>
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <ion-label>Daniel Hernandez</ion-label>
+            </ion-item>
+          </ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-tabs></app-tabs>
+</ion-content>

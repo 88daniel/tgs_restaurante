@@ -1,0 +1,25 @@
+.login-div {
+  top: 55%;
+
+
+}
+
+
+.imagenfondo {
+  z-index: -5;
+  position: absolute;
+  top: -400px;
+  left: 0 ;
+}
+
+ion-item {
+  ion-label {
+    color: grey;
+  }
+}
+
+ion-button {
+  ion-icon {
+    margin-left: -5px;
+  }
+}
