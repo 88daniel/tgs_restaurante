@@ -11,32 +11,33 @@
           </ion-card-header>
           <ion-card-content>
             <ion-grid fixed>
-              <ion-row>
-                <ion-col size="12">
-                 <ion-item>
-                  <ion-label position="floating">Usuario:</ion-label>
-                  <ion-input size="9"  type="text"></ion-input>
-                 </ion-item>
-                </ion-col>
-              </ion-row>
-              <ion-row>
-                <ion-col size="12">
-                  <ion-item>
-                    <ion-label position="floating">Password:</ion-label>
-                    <ion-input  type="password"></ion-input>
+              <ion-card>
+                <ion-row>
+                  <ion-col size="12">
+                   <ion-item>
+                    <ion-label position="floating">Usuario:</ion-label>
+                    <ion-input size="9"  type="text"></ion-input>
+                   </ion-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-item>
+                      <ion-label position="floating">Password:</ion-label>
+                      <ion-input  type="password"></ion-input>
 
-                  </ion-item>
-                </ion-col>
-              </ion-row>
-              <ion-row class="ion-justify-content-center">
-                <ion-col size="12">
-                  <ion-button expand="block" color="dark">
-                    <ion-icon slot="start" name="enter-outline"></ion-icon>
-                    Login
-                  </ion-button>
-                </ion-col>
-
-              </ion-row>
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="ion-justify-content-center">
+                  <ion-col size="12">
+                    <ion-button expand="block" color="dark">
+                      <ion-icon slot="start" name="enter-outline"></ion-icon>
+                      Login
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
               <ion-row class="ion-justify-content-center">
                 <ion-col size="12">
                   <div class="ion-text-center" style="font-weight: bolder;">Or</div>
@@ -47,7 +48,7 @@
                 <ion-col size="12">
                   <ion-button (click)="loginWithFacebook()" expand="block" color="primary">
                     <ion-icon slot="start" name="logo-facebook"></ion-icon>
-                    Sign up with Facebook
+                    Login with Facebook
                   </ion-button>
                 </ion-col>
 
@@ -55,9 +56,9 @@
 
               <ion-row class="ion-justify-content-center">
                 <ion-col size="12" >
-                  <ion-button expand="block" color="danger" >
+                  <ion-button expand="block" (click)="loginWithGmail()" color="danger" >
                     <ion-icon slot="start" name="logo-google"></ion-icon>
-                    Sign up with Gmail
+                    Login with Gmail
                   </ion-button>
                 </ion-col>
 

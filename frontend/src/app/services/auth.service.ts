@@ -10,6 +10,22 @@ export class AuthService {
   constructor(public auth: AngularFireAuth) { }
 
   loginWithFacebook() {
-    this.auth.signInWithPopup(new auth.FacebookAuthProvider());
+    this.auth.signInWithPopup(new auth.FacebookAuthProvider()).then(
+
+    ).catch(
+
+    );
+  }
+
+  loginWithGmail() {
+    this.auth.signInWithPopup(new auth.GoogleAuthProvider()).then(
+      () => {
+        alert('funciona');
+      }
+    ).catch(
+      () => {
+        alert('error');
+      }
+    );
   }
 }

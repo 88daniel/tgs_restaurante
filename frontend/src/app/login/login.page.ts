@@ -18,4 +18,8 @@ export class LoginPage implements OnInit {
     this.authservice.loginWithFacebook();
   }
 
+  loginWithGmail() {
+    this.authservice.loginWithGmail();
+  }
+
 }

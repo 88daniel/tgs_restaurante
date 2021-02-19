@@ -11,6 +11,10 @@ import { AppComponent } from './app.component';
 // ANGULARFIRE2 AND FIREBASE CONFIG
 import { environment } from '../environments/environment';
 import {AngularFireModule} from '@angular/fire';
+// import ngx-translate and the http loader
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent,
@@ -22,6 +26,16 @@ import {AngularFireModule} from '@angular/fire';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: (http: HttpClient) => {
+            return new TranslateHttpLoader(http);
+          },
+          deps: [ HttpClient ]
+
+      }
+  })
 
 
   ],
