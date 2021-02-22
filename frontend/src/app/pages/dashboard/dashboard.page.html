@@ -1,18 +1,121 @@
 <ion-content>
   <ion-grid fixed>
     <ion-row>
-      <ion-col size="6">
-        <div class="ion-text-left">
-          <ion-text color="primary">
-            <h1>Bienvenido</h1>
-            <ion-item>
-              <ion-icon name="person-circle-outline"></ion-icon>
-              <ion-label>Daniel Hernandez</ion-label>
-            </ion-item>
-          </ion-text>
-        </div>
-      </ion-col>
+        <ion-col size="12">
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-card button mode="ios" class="cardproductos">
+                            <ion-card-header>
+                                <ion-card-title>
+
+                                    <ion-item lines="none">
+                                        <img src="../../../assets/imagenes/box.png" alt="">
+                                        <ion-label>
+                                            Menus
+                                        </ion-label>
+
+                                    </ion-item>
+                                   <div>
+                                    <ion-fab vertical="center" horizontal="end" slot="fixed">
+                                        <ion-fab-button >
+                                          <ion-icon name="add"></ion-icon>
+                                        </ion-fab-button>
+                                      </ion-fab>
+                                   </div>
+                                </ion-card-title>
+
+                            </ion-card-header>
+                            <ion-card-content>
+
+                                <ion-grid fixed>
+                                    <ion-row>
+                                        <ion-col size="4">
+                                            <ion-button expand="block" color="secondary" fill="outline">
+                                                Productos y movimientos
+                                            </ion-button>
+                                        </ion-col>
+                                        <ion-col size="4">
+                                            <ion-button expand="block" color="primary" fill="outline">
+                                                Reportes
+                                            </ion-button>
+                                        </ion-col>
+                                        <ion-col size="4">
+                                            <ion-button expand="block" color="dark" fill="outline">
+                                                Historico
+                                            </ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row>
+                                        <ion-col size="12">
+                                            <ion-card class="card-alertas" mode="md">
+                                                <ion-card-header>
+                                                    <ion-card-subtitle>
+                                                        Alertas de productos
+                                                    </ion-card-subtitle>
+
+                                                </ion-card-header>
+                                                <ion-card-content>
+                                                    <ion-row>
+                                                        <ion-col size="3">
+                                                            <img src="../../../assets/imagenes/investigacion.png" alt="">
+                                                        </ion-col>
+                                                        <ion-col size="3">
+                                                            <img src="../../../assets/imagenes/grafico.png" alt="">
+                                                        </ion-col>
+
+
+
+                                                        <ion-col size="3">
+                                                            <img src="../../../assets/imagenes/barcode.png" alt="">
+                                                        </ion-col>
+                                                    </ion-row>
+                                                </ion-card-content>
+                                            </ion-card>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-lg="4" size-md="6" size-sm="6" size-xs="6">
+                        <ion-card button mode="ios" class="cardproduct">
+                            <ion-card-header>
+                                <ion-card-title>Usuarios y roles</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <img src="../../../assets/imagenes/users64.png" alt="">
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+
+                    <ion-col size-lg="4" size-md="6" size-sm="6" size-xs="12">
+                        <ion-card button mode="ios" class="cardproduct">
+                            <ion-card-header>
+                                <ion-card-title>Proveedores</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <img src="../../../assets/imagenes/proveedores64.png" alt="">
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+
+                    <ion-col size-lg="4" size-md="6" size-sm="6" size-xs="12">
+                        <ion-card button mode="ios" class="cardproduct" routerLink="categorias">
+                            <ion-card-header>
+                                <ion-card-title>Categorias</ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <img src="../../../assets/imagenes/categoria64.png" alt="">
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-col>
     </ion-row>
-  </ion-grid>
+</ion-grid>
   <app-tabs></app-tabs>
 </ion-content>

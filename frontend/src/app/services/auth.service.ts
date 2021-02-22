@@ -7,7 +7,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class AuthService {
 
-  constructor(public auth: AngularFireAuth) { }
+  constructor(private auth: AngularFireAuth) { }
 
   loginWithFacebook() {
     this.auth.signInWithPopup(new auth.FacebookAuthProvider()).then(
@@ -20,12 +20,14 @@ export class AuthService {
   loginWithGmail() {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider()).then(
       () => {
-        alert('funciona');
+
       }
     ).catch(
       () => {
-        alert('error');
+
       }
     );
   }
+
+
 }

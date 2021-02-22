@@ -1,13 +1,12 @@
-import { DashboardPage } from './../dashboard/dashboard.page';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PedidosPage } from './pedidos.page';
+import { DashboardAdminPage } from './dashboard-admin.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: PedidosPage
+    component: DashboardAdminPage
   }
 ];
 
@@ -15,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PedidosPageRoutingModule {}
+export class DashboardAdminPageRoutingModule {}
