@@ -15,6 +15,9 @@ import {AngularFireModule} from '@angular/fire';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 @NgModule({
   declarations: [AppComponent,
@@ -26,6 +29,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
