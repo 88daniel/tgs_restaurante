@@ -20,7 +20,6 @@ export class RegisterComponent implements OnInit {
   frm_store: FormGroup;
   slides = false;
   formulario = true;
-
   storedto: Store = new Store();
   user: UserSocial = new UserSocial();
   usercredential: User;
@@ -83,8 +82,7 @@ export class RegisterComponent implements OnInit {
   registerWithFacebook() {
     this.auth.signInWithPopup(new auth.FacebookAuthProvider()).then(
       (result) => {
-        const user = result.user;
-        console.log(user.uid);
+
       }
     ).catch(
       (result) => {

@@ -22,6 +22,8 @@ export class LoginPage implements OnInit {
   loginWithFacebook() {
     this.auth.signInWithPopup(new auth.FacebookAuthProvider()).then(
         (result) => {
+          const u = result.additionalUserInfo;
+
           this.successToast();
         }
       ).catch(
